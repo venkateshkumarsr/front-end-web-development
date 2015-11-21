@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngulasrJS - Session 10 - Assinment 4</title>
+		<meta charset="UTF-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+	</head>
+<body ng-app="angularApp1" >	
+<div ng-controller="angularControl1">
+
+<p>Name: <input type="text" ng-model="Name"></p>
+
+Name: {{Name}}
+
+</div>
+
+<div  ng-controller="angularControl2">
+
+<p>Location: <input type="text" ng-model="myLoc"></p>
+
+Location: {{myLoc}}
+
+</div>
+<script>
+var angularControl1= function($scope) {
+    $scope.Name= "Venkat";
+ };
+
+var angularControl2= function($scope) {
+    $scope.myLoc= "Bangalore";
+ };
+</script>
+
+</body>	
+</html>
