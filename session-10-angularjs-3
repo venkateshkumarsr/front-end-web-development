@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngulasrJS - Session 10 - Assinment 3</title>
+		<meta charset="UTF-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script type="text/javascript">
+	var myModule = angular.module('myModule', []);
+	myModule.controller('MyCtrl', function ($scope) {
+		$scope.msg = "Hellow World!";
+		});
+	</script>
+	</head>
+<body>	
+<div ng-app="myModule" 
+	<div ng-controller="MyCtrl">
+	<p>{{msg}}</p>
+	</div>
+ </div>
+</body>	
+</html>
