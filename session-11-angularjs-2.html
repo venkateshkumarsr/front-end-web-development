@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngulasrJS - Session 10 - Assinment 2</title>
+		<meta charset="UTF-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	</head>
+<body>	
+<div ng-app="angularApp" ng-controller="angularControl">
+
+<button ng-click = "click()">Click here...</button>
+	
+
+</div>
+
+<script>
+var app = angular.module('angularApp', []);
+app.controller('angularControl', function($scope) {
+    $scope.lastName= "Venkat";
+    $scope.click	= function () {
+    	alert($scope.lastName)
+    }
+});
+</script>
+</body>	
+</html>
